@@ -1,0 +1,23 @@
+body{
+	width: 250px;
+    height: 150px;
+    font-family: 'Italic';
+}
+
+.card{
+	border: solid;
+	border-width: thin;
+	width: 300px;
+	padding: 5px 15px 15px 15px;
+}
+
+.descrit{
+	margin-top: 15px; 
+	border: solid;
+	border-width: thin;
+	padding: 5px 10px 5px 10px;
+}
+
+.list {
+    padding-left: 0px;
+}
