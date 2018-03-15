@@ -21,8 +21,8 @@ function makeGrid(linha, coluna) { //recebo os valores
 		for(var j = 0; j < coluna; j++) {
 			$('table') //adiciono as colunas às linhas correspondentes
 				.children()
-	        	.last()
-	        	.append("<td></td>");
+	        		.last()
+	        		.append("<td></td>");
 		}
 	}
 
