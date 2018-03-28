@@ -22,18 +22,18 @@ $('#sizePicker').submit(function (event) {
 	const largura = $('#inputWeight').val(); //variavel recebe o valor do usuario
 	const altura = $('#inputHeight').val(); //variavel recebe o valor do usuario
 	$("#pixelCanvas").append(makeGrid(largura, altura)); //a table pixelCanvas irá receber 
-														 // e fazer aparecer a tabela retornada
-														 //pela função makeGrid
+							     // e fazer aparecer a tabela retornada
+							     //pela função makeGrid
 	mudarCor(); //após gráfico feito, pode mudar a cor das células
 });
 
 function makeGrid(largura, altura){
 	var tabela = "<table>"; //Tratar a tabela como uma string
 	for (let i = 0; i < altura; i++ ) { //for que controla linhas
-        tabela += "<tr>"; //tabela recebe uma linha nova 
-        for (let j = 0; j < largura; j++ ) //for que controla colunas
-            tabela += "<td></td>"; //a linha[i] recebe a coluna[j] nova
-        tabela += "</tr>"; //fecha a linha[i]
+        	tabela += "<tr>"; //tabela recebe uma linha nova 
+        	for (let j = 0; j < largura; j++ ) //for que controla colunas
+            		tabela += "<td></td>"; //a linha[i] recebe a coluna[j] nova
+        	tabela += "</tr>"; //fecha a linha[i]
     } 
     return tabela;
 }
@@ -50,7 +50,7 @@ function mudarCor() {
 
 $('#limpar').click(function (){
 	var strconfirm = confirm("Você quer apagar sua arte?");
-    if (strconfirm == true) {
-    	$('#pixelCanvas').html('');
-    }
+    		if (strconfirm == true) {
+    			$('#pixelCanvas').html('');
+    		}		
 });
